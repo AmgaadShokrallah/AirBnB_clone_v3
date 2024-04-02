@@ -66,7 +66,7 @@ def update_state(state_id):
             return jsonify(state.to_dict()), 200
     else:
         return abort(404)
-    
+
 
 
 @app_views.route('/states/<state_id>', methods=['DELETE'],
