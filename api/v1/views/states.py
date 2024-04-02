@@ -11,7 +11,7 @@ from  models import storage
 def get_all_states():
     '''getting thing'''
     states = storage.all('State').values()
-    state_list = [state.to_dict()  for state in states]
+    state_list = [state.to_dict() for state in states]
     return jsonify(state_list)
 
 
